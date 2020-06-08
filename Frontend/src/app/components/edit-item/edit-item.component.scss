@@ -1,0 +1,25 @@
+@import 'src/assets/breakpoints.scss';
+
+.card {
+    margin-top: 1rem;
+
+    @include media('<=phone') {
+        width: 20rem;
+        max-width: 20rem;
+    }
+
+    @include media('>phone', '<=tablet') {
+        width: 31rem;
+        max-width: 31rem;
+    }
+
+    @include media('>tablet', '<=desktop') {
+        width: 58rem;
+        max-width: 58rem;
+    }
+
+    @include media('>desktop', '<=LGdesktop') {
+        width: 70rem;
+        max-width: 70rem;
+    }
+}

@@ -1,0 +1,16 @@
+<div [class]="getCardClass()">
+    <div class="card-body">
+        <h5 class="card-title">{{item.title}} <span *ngIf="showStatus">[{{status}}]</span></h5>
+        <p class="card-text">{{item.description}}</p>
+
+        <a href="#" class="btn btn-light"
+            (click)="edit()">Edit</a>
+        <a href="#" class="btn btn-danger" 
+            *ngIf="!item.isDeleted && !item.isCompleted"
+            (click)="delete()">Delete</a>
+        <a href="#" class="btn btn-success" 
+            *ngIf="!item.isDeleted && !item.isCompleted"
+            (click)="complete()">Complete</a>
+    </div>
+</div>
+
