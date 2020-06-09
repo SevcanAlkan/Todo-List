@@ -5,6 +5,8 @@ Todo list application is written to use the Java Spring and Angular as basic lev
 ## Requirements
 
  ### Backend
+ - MS SQL Server 2019 (Developer edition) [Download](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
+ - MS SQL Server Managment Studio *Version 18.5* [Download](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
  - Java SE JDK *Version 1.8.0 (8u251)* [Download](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html) (for only editing or reviewing codes)
  - IntelliJ Idea IDE (or you can use an alternative) [Download](https://www.jetbrains.com/idea/download/)
  - Maven *Version 3.6.3* [Download](https://maven.apache.org/download.cgi)
@@ -22,11 +24,13 @@ Todo list application is written to use the Java Spring and Angular as basic lev
  2. Setup the Java_Home envirment variable
  3. Install the Maven and setup the 'Maven Path' envirment variable
  4. Install IntelliJ Idea
- 5. Checkout latest release of the project
- 6. Open the IDE
- 7. Open project via pom.xml file
- 8. The IntelliJ will inistall all dependencies, but if it wont; use maven clena and then install commands to install all dependency packages.
- 9. You can start project via IntelliJ or Maven CLI.   
+ 5. Install MS SQL Server and MSSMS
+ 6. Connect to SQL instance via managment studio, and create a database with 'TodoList' (the api uses 'sa' username and '1' as password, if you sql instalation these login credentials are different, please update the **application.properties** file)
+ 7. Checkout latest release of the project
+ 8. Open the IDE
+ 9. Open project via pom.xml file
+ 10. The IntelliJ will inistall all dependencies, but if it wont; use maven clena and then install commands to install all dependency packages.
+ 11. You can start project via IntelliJ or Maven CLI.   
 
 ## Preparing the Frontend to start
 
